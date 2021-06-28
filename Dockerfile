@@ -38,8 +38,8 @@ COPY php.ini $PHP_INI_DIR/conf.d/99-ezgames.ini
 
 # Deploy SupervisorD configuration
 RUN mkdir /etc/supervisor && mkdir /etc/supervisor/conf.d && mkdir /var/log/supervisor
-COPY docker/php/supervisord.conf /etc/supervisor
-COPY docker/php/supervisor.d/* /etc/supervisor/conf.d/
+COPY supervisord.conf /etc/supervisor
+COPY supervisor.d/* /etc/supervisor/conf.d/
 
 CMD yarn install \
 && composer install --no-dev \
