@@ -20,6 +20,7 @@ RUN install-php-extensions pgsql
 RUN install-php-extensions pdo_pgsql
 RUN install-php-extensions redis
 RUN install-php-extensions grpc
+RUN install-php-extensions protobuf
 
 # Install composer
 RUN install-php-extensions @composer
