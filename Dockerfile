@@ -1,4 +1,4 @@
-FROM php:8.0-fpm-alpine3.13
+FROM php:8.1-alpine3.16
 
 LABEL maintainer="Saber Nouira"
 
